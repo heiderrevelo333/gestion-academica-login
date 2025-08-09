@@ -1,3 +1,58 @@
+.brand-logo {
+    width: 38px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.brand-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    vertical-align: middle;
+}
+.sistema-desc {
+    color: #fff;
+    opacity: 0.9;
+    font-size: 1.05rem;
+}
+.left-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.left-desc {
+    color: #fff;
+    opacity: 0.95;
+    margin: 18px 0 12px 0;
+    max-width: 420px;
+}
+.left-list {
+    color: #fff;
+    opacity: 0.95;
+    list-style: none;
+    padding: 0 0 0 0.5em;
+    margin-bottom: 18px;
+}
+.left-list li {
+    margin-bottom: 6px;
+}
+.metrics {
+    display: flex;
+    gap: 32px;
+    margin-top: 18px;
+}
+.metrics > div {
+    color: #fff;
+    text-align: center;
+}
+.metric-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.metric-label {
+    font-size: 1rem;
+    opacity: 0.85;
+}
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -25,6 +80,10 @@ body {
     width: 50%;
     background: url('https://www.javerianacali.edu.co/sites/default/files/styles/image_800x600/public/2023-01/Maestr%C3%ADa-en-Software-plan-de-estudios.png.webp?itok=JAuUMeSK') center center/cover no-repeat;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .background-overlay {
@@ -33,8 +92,75 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(44, 62, 80, 0.6);
+    background: rgba(44, 62, 80, 0.7);
     z-index: 1;
+}
+
+.left-content {
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px 32px 40px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.left-content h2 {
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.left-content ul {
+    color: #fff;
+    opacity: 0.95;
+    list-style: none;
+    padding: 0 0 0 0.5em;
+    margin-bottom: 18px;
+}
+
+.left-content li {
+    margin-bottom: 6px;
+    font-size: 1.08rem;
+}
+
+.left-content .metrics {
+    display: flex;
+    gap: 32px;
+    margin-top: 18px;
+}
+
+.left-content .metrics > div {
+    color: #fff;
+    text-align: center;
+}
+
+.left-content .metrics > div > div:first-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.left-content .metrics > div > div:last-child {
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+    .left-panel {
+        min-height: 40vh;
+        padding: 0;
+    }
+    .left-content {
+        min-height: 40vh;
+        padding: 24px 8px;
+        max-width: 98vw;
+    }
 }
 
 .right-panel {
